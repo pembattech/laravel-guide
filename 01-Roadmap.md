@@ -1,7 +1,3 @@
-Here’s a **clear, step-by-step roadmap to learn PHP and Laravel**, structured from **beginner → job-ready**. This fits well with your background since you’ve already worked with **Laravel projects** and **PHP–MySQL systems**.
-
----
-
 ## 🟢 Phase 1: Programming & Web Basics (Foundation)
 
 **Goal:** Understand how the web and backend logic work.

@@ -1,12 +1,3 @@
-Below is a **clean, well-organized list of essential Laravel commands**, written as **practical notes** you can directly add to your Markdown file.
-These cover **project creation → daily development → database → auth → API → deployment prep**.
-
-You can save this as a section like:
-👉 `Laravel_Commands_CheatSheet.md`
-or append it to your **Phase 4–9 notes**.
-
----
-
 # 🧾 Laravel Essential Commands (Complete Guide)
 
 ## 🔧 Prerequisites (Run Once)
@@ -221,7 +212,31 @@ php artisan make:resource UserResource
 
 ## 🔐 10. API Authentication (Sanctum)
 
-### Install Sanctum
+### Method 1: Using php artisan api:install
+
+This command **automatically configures API authentication** (Sanctum + API routes).
+
+```bash
+php artisan api:install
+```
+
+What this does:
+
+* Installs **Laravel Sanctum**
+* Publishes Sanctum config
+* Creates `routes/api.php` (if missing)
+* Sets up API middleware
+* Prepares token-based authentication
+
+After that, run migrations:
+
+```bash
+php artisan migrate
+```
+
+### Method 2: Manual Sanctum Installation (Older Laravel / Custom Setup)
+
+Use this if you want full control:
 
 ```bash
 composer require laravel/sanctum
@@ -368,3 +383,7 @@ php artisan tinker
 ✔ Never push `.env` to GitHub
 
 ---
+
+## 🔐 10. API Authentication (Laravel Sanctum)
+
+
